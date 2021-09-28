@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4f9d994a4d29c2cb158f498ad349b7b",
+    "content-hash": "a5541c8fae4049a9401b973d6c057274",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5952,6 +5952,63 @@
             "time": "2021-08-12T08:29:30+00:00"
         },
         {
+            "name": "laravel/breeze",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "4db86e46f4072b6cda5dcada89c428fcde98c6ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/4db86e46f4072b6cda5dcada89c428fcde98c6ab",
+                "reference": "4db86e46f4072b6cda5dcada89c428fcde98c6ab",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^8.42",
+                "illuminate/support": "^8.42",
+                "illuminate/validation": "^8.42",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2021-09-07T14:25:15+00:00"
+        },
+        {
             "name": "laravel/sail",
             "version": "1.x-dev",
             "source": {
@@ -8012,7 +8069,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "laravel/breeze": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
